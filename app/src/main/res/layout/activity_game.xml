@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_main_activity_bg"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="60dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/player_1_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Player 1 Score : "
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:textAlignment="textStart"/>
+
+        <TextView
+            android:id="@+id/player_2_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Player 2 Score : "
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:textAlignment="textStart"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="3"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:columnCount="3">
+
+            <ImageView
+                android:id="@+id/element_00"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="0dp"
+                android:scaleType="fitXY"
+                android:padding="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_not_selected"/>
+
+            <ImageView
+                android:id="@+id/element_01"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_not_selected"/>
+
+            <ImageView
+                android:id="@+id/element_02"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_not_selected"/>
+
+            <ImageView
+                android:id="@+id/element_10"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="0dp"
+                android:scaleType="fitXY"
+                android:padding="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_not_selected"/>
+
+            <ImageView
+                android:id="@+id/element_11"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_not_selected"/>
+
+            <ImageView
+                android:id="@+id/element_12"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="0dp"
+                android:scaleType="fitXY"
+                android:padding="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_not_selected"/>
+
+            <ImageView
+                android:id="@+id/element_20"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="0dp"
+                android:scaleType="fitXY"
+                android:padding="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_not_selected"/>
+
+            <ImageView
+                android:id="@+id/element_21"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="0dp"
+                android:scaleType="fitXY"
+                android:padding="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_not_selected"/>
+
+            <ImageView
+                android:id="@+id/element_22"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="0dp"
+                android:scaleType="fitXY"
+                android:padding="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_not_selected"/>
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/players_turn_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Player 1 turn"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"/>
+
+
+        <Button
+            android:id="@+id/restart_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:backgroundTint="@color/purple_200"
+            android:text="Restart"/>
+
+        <Button
+            android:id="@+id/end_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/purple_500"
+            android:padding="10dp"
+            android:text="End Game"/>
+
+    </LinearLayout>
+
+</ScrollView>

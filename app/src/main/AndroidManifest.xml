@@ -10,9 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TicTacToe">
         <activity
+            android:name=".GameActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentWindow" />
+        <activity
+            android:name=".Player2InfoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentWindow" />
+        <activity
             android:name=".MainActivity"
-            android:theme="@style/TranslucentWindow"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentWindow">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
